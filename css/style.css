@@ -675,3 +675,5 @@ section { padding: 140px 0; }
 @media (max-width: 360px) {
   .brand-sub { display: none; }
 }
+
+.info-note { font-weight: 500; color: var(--text-sub); }
