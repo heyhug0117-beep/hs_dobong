@@ -686,3 +686,22 @@ section { padding: 140px 0; }
 }
 
 .footer-brand .footer-name { font-size: 17px; font-weight: 800; color: var(--text-strong); letter-spacing: -0.02em; }
+
+/* 상단 학원명 (글자) */
+.brand-name {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.brand-branch { color: var(--text-strong); }
+
+@media (max-width: 760px) {
+  .brand-name { font-size: 16px; }
+}
+
+@media (max-width: 360px) {
+  .brand-name { font-size: 15px; }
+}
