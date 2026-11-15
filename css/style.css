@@ -705,3 +705,40 @@ section { padding: 140px 0; }
 @media (max-width: 360px) {
   .brand-name { font-size: 15px; }
 }
+
+/* 메인 제목: 화면 너비에 맞춰 크기 조정 (태블릿 포함) */
+.hero h1 { font-size: clamp(27px, 7.4vw, 68px); }
+
+@media (max-width: 760px) {
+  .hero h1 { font-size: clamp(27px, 7.6vw, 40px); }
+  .headline-fit { font-size: clamp(24px, 6.6vw, 32px); }
+}
+
+/* 태블릿: 상단 메뉴가 한 줄에 들어가도록 */
+@media (min-width: 761px) and (max-width: 1100px) {
+  .brand-name { font-size: 16px; }
+  .main-nav ul { gap: 0; }
+  .main-nav a { padding: 8px 8px; font-size: 14px; }
+  .header-cta { padding: 8px 12px; font-size: 13px; }
+}
+
+/* 태블릿(900px 이하): 휴대폰처럼 메뉴 버튼 사용 */
+@media (min-width: 761px) and (max-width: 900px) {
+  .main-nav {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid var(--line);
+    display: none;
+  }
+
+  .main-nav.open { display: block; }
+  .main-nav ul { flex-direction: column; padding: 8px 24px 20px; gap: 0; }
+  .main-nav a { padding: 14px 8px; font-size: 17px; }
+  .nav-cta-mobile { display: block !important; color: var(--accent) !important; }
+  .header-cta { display: none; }
+  .nav-toggle { display: block; }
+  .brand-name { font-size: 18px; }
+}
