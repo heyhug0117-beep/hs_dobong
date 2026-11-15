@@ -742,3 +742,6 @@ section { padding: 140px 0; }
   .nav-toggle { display: block; }
   .brand-name { font-size: 18px; }
 }
+
+.footer-keywords { margin-top: 20px; font-size: 13px; line-height: 1.8; color: var(--text-faint); }
+#location .desc { max-width: 720px; }
