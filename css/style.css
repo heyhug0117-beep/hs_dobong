@@ -684,3 +684,5 @@ section { padding: 140px 0; }
 @media (max-width: 960px) {
   .headline-long { font-size: clamp(24px, 6.4vw, 40px); }
 }
+
+.footer-brand .footer-name { font-size: 17px; font-weight: 800; color: var(--text-strong); letter-spacing: -0.02em; }
